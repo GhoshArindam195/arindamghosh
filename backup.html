@@ -24,8 +24,15 @@
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="myCss/mycss.css">
 
+    <!-- External owl css -->
+    <link rel="stylesheet" href="myCss/owl.carousel.min.css">
+    <link rel="stylesheet" href="myCss/owl.theme.default.min.css">
+
     <!-- faaaab faaab Fab Icon-->
-       	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" async="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" async="">
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
     <title>Arindam Ghosh | Portfolio</title>
 
@@ -73,7 +80,7 @@
 		        <a class="nav-link" href="https://ghosharindam195.github.io/arindamghosh/#skills"><span class="fa fa-user-secret"></span> SKILLS</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link " href="https://ghosharindam195.github.io/arindamghosh/#certificates" ><span class="fa fa-file-image-o"></span> CERCIFICATES</a>
+		        <a class="nav-link " href="https://ghosharindam195.github.io/arindamghosh/#certificates" ><span class="fa fa-file-image-o"></span> CERTIFICATES</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link " href="https://ghosharindam195.github.io/arindamghosh/#contact" ><span class="fa fa-send"></span> CONTACT</a>
@@ -87,7 +94,7 @@
 
 		<section id="intro" style="margin-top: 67px;">
 			<div class="container-fluid primary-background text-white p-0 m-0">
-				<div class="text-center py-1">
+				<div class="text-center py-1 wow animate__animated animate__backInDown">
 					<img src="img/arindam.jpg" alt="" class="img-fluid" style="border-radius: 50%; max-width: 300px;">
 				</div>
 
@@ -95,7 +102,7 @@
 				<div class="container text-center">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 data-animate="fadeInUp" class=" ">
+							<h1 data-animate="fadeInUp" class="wow animate__animated animate__backInDown ">
 								<span id="typed" class="text-white " style="font-size: 27px;"></span>
 								<span class="typed-cursor"></span>
 							</h1>
@@ -110,12 +117,12 @@
 
 		<section id="skills" class="skill-background" >
 			<div class=" container text-center ">
-				<h3 class="title text-light"> <strong>Skills</strong></h3>
+				<h3 class="title text-light wow animate__animated animate__rubberBand"> <strong>Skills</strong></h3>
 
 				<div class="row">
 
 					<div class="col-sm-12">
-						<i class="icon-java text-light" style="font-size: 125px"></i>
+						<div class="wow animate__animated animate__backInLeft"><i class="icon-java text-light" style="font-size: 125px"></i></div>
 						<p class="text-light" style="font-size: 20px">I'm a passionate Java coder. I like to code on my free time. I have created few repositories on github.There are Some games which I made using Java Swing. I like to code in a short and sweet way.</p>
 					</div>
 
@@ -151,8 +158,88 @@
 			</div>
 		</section>
 
-		<section id="certificates">
-			
+		<section id="certificates" class="certificate-background pt-4">
+			<div class="container text-center">
+				<h3 class="titleC text-dark"> <strong>Certificates</strong></h3>
+			</div>
+			<div class="container">
+				<div class=" row owl-carousel owl-theme">
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/java.jpg" alt="java pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/AWS1.jpg" alt="aws1 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/AWS2.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/AWS3.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/AWS_EC2.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/udemy1.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/udemy2.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/game1.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<img src="certificates/game2.jpg" alt="aws2 pic" class="img-fluid" style="max-width: 100%; max-height: 80vh;">
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
 		</section>
 		
 		<section id="contact" class="contact-background">
@@ -221,8 +308,6 @@
 
 
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -235,18 +320,23 @@
 	<!-- TypedJS JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 
+	<!-- owl js -->
+    <script src="myJs/owl.carousel.min.js"></script>
+
+    <!-- wow animate js -->
+    <script src="myJs/wow.min.js"></script>
+
 	<script>
 		var typed = new Typed('#typed', {
 			strings: ["Hello Sir, Namaskar !",
 			"Welcome To My page!",
 			"I am Arindam Ghosh",
-			"I'm pursuing my B.Tech degree from Guru Nanak Institute of Technology,Kolkata",
 			"I am a Passionate Coder!",
-			"I am a JAVA Developer",
+			"I am a JAVA Developer ,",
+			"I am a Web Developer !",
 			"I am an enthusiastic Techie!",
-			"Checkout My GitHub,mentioned below in the contact section",
-			"Thanks for visiting my page!"
-
+			"Checkout My GitHub",
+			"Thanks for visiting"
 			],
 			backSpeed: 15,
 			smartBackspace: true,
@@ -254,13 +344,33 @@
 			startDelay: 1500,
 			typeSpeed: 25,
 			loop: true,
-
 		});
 	</script>
 
+	<script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                }
+            }
+        })
+    </script>
 
-	
-
+    <script>
+    	new WOW().init();
+    </script>
 
   </body>
 </html>
