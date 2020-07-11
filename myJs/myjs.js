@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("#menus li a").click(function(e){
+    $(".menus li a").click(function(e){
 
         // alert("clicked")
         let target = $(this).attr("href");
