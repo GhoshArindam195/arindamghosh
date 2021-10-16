@@ -81,28 +81,58 @@
 
     gtag('config', 'UA-183817910-1');
   </script>
+
+  <!-- Google MAp responsive css -->
+  <style>
+    .map-responsive {
+
+      overflow: hidden;
+
+      padding-bottom: 56.25%;
+
+      position: relative;
+
+      height: 0;
+
+    }
+
+    .map-responsive iframe {
+
+      left: 0;
+
+      top: 0;
+
+      height: 100%;
+
+      width: 100%;
+
+      position: absolute;
+
+    }
+  </style>
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark primary-background fixed-top">
-    <a class="navbar-brand" href="index.html" style="font-size: 30px"><span class="fa fa-user-circle mr-2"></span>Arindam
+    <a class="navbar-brand" href="index.html" style="font-size: 30px"><span
+        class="fa fa-user-circle mr-2"></span>Arindam
       Ghosh</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <div class="collapse navbar-collapse menus" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto" style="font-size: 20px">
 
         <!-- //Student section........../. -->
         <li class="nav-item mr-5">
-          <a class="nav-link" href="#"><i class="fas fa-user-graduate text-primary" style="font-size:3vw"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-user-graduate text-primary" style="font-size:3vw" title="Student's Portal"></i></a>
         </li>
         <!-- //Youtube section........... -->
         <li class="nav-item mr-5">
-          <a class="nav-link" href="youtube.html"><i class="fab fa-youtube text-danger" style="font-size:3vw"></i></a>
+          <a class="nav-link" href="youtube.html"><i class="fab fa-youtube text-danger" style="font-size:3vw" title="Youtube Section"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#intro"><span class="fa fa-info-circle"></span>INTRODUCTION
@@ -121,7 +151,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#contact"><span class="fa fa-send"></span> CONTACT</a>
         </li>
-        
+
         <!-- Hidden play button, which triggers auto carausal moving..  -->
         <li class="nav-item">
           <button type="button" class="btn btn-primary play" style="display: none">
@@ -365,17 +395,26 @@
       </div>
     </div>
   </section>
-
-  <section id="contact" class="contact-background">
+  
+  <section id="contact" class="contact-background container-fluid">
+    
     <div class="container text-center wow animate__animated animate__flipInY" data-wow-delay="500ms">
       <h3 class="title text-light"><strong>How to contact ?</strong></h3>
     </div>
-
+    
+    <div class="row mb-3">
+      <div class="col-sm-12 map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.5619255373926!2d88.37914034846706!3d22.694963016781642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d9d6bda7085%3A0xeb73f225813761fc!2sTech%20Ghosh%20Placement%20Solution!5e0!3m2!1sen!2sin!4v1634361079829!5m2!1sen!2sin"
+          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    
     <div class="container mb-3 wow animate__animated animate__rubberBand" data-wow-delay="1s">
       <div class="row">
         <div class="col-sm-12">
           <a target="_blank" href="mailto:ghosharindam195@gmail.com?subject=Hello%20Arindam " class="container"
-            id="round-contact-button">Email Me<i class="fa fa-envelope ml-2 mt-2"></i></a>
+            id="round-contact-button">Email Us<i class="fa fa-envelope ml-2 mt-2"></i></a>
         </div>
       </div>
     </div>
@@ -386,7 +425,7 @@
         <div class="col-sm-12">
           <ul class="list-unstyled list-inline text-center py-2">
             <li class="list-inline-item">
-              <h5 class="mb-1 text-white">Please follow me on</h5>
+              <h5 class="mb-1 text-white">Follow Us On</h5>
             </li>
             <li class="list-inline-item wow animate__animated animate__tada" data-wow-delay="1500ms">
               <buttton class="btn btn-danger btn-rounded">Social</buttton>
@@ -425,14 +464,20 @@
                 <i class="fab fa-twitter"> </i>
               </a>
             </li>
+            <li class="list-inline-item wow animate__animated animate__zoomIn" data-wow-delay="3600ms">
+              <a class="btn-floating btn-li mx-1" href="https://www.youtube.com/channel/UC24xiw1117NS3GLCaADghJw" target="__blank">
+                <i class="fab fa-youtube"> </i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
+
   </section>
 
   <div class="footer-copyright text-center py-3">
-    © 2020 Copyright:
+    © 2021 Copyright:
     <a href="mailto:ghosharindam195@gmail.com?subject=Hello%20Arindam ">Arindam Ghosh</a>
   </div>
 
@@ -529,7 +574,7 @@
       owl.trigger("play.owl.autoplay", [3500]);
     });
   </script>
-  
+
 
   <script type="text/javascript">
     $(document).ready(function () {
