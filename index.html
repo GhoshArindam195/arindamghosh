@@ -128,11 +128,13 @@
 
         <!-- //Student section........../. -->
         <li class="nav-item mr-5">
-          <a class="nav-link" href="students.html"><i class="fas fa-user-graduate text-primary" style="font-size:3vw" title="Student's Portal"></i></a>
+          <a class="nav-link" href="students.html"><i class="fas fa-user-graduate text-primary" style="font-size:3vw"
+              title="Student's Portal"></i></a>
         </li>
         <!-- //Youtube section........... -->
         <li class="nav-item mr-5">
-          <a class="nav-link" href="youtube.html"><i class="fab fa-youtube text-danger" style="font-size:3vw" title="Youtube Section"></i></a>
+          <a class="nav-link" href="youtube.html"><i class="fab fa-youtube text-danger" style="font-size:3vw"
+              title="Youtube Section"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#intro"><span class="fa fa-info-circle"></span>INTRODUCTION
@@ -162,6 +164,14 @@
     </div>
   </nav>
   <!-- Navbar end -->
+
+  <!-- ****************** -->
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <!-- ****************** -->
 
   <!-- Banner -->
   <section id="intro" style="margin-top: 67px">
@@ -394,13 +404,13 @@
       </div>
     </div>
   </section>
-  
+
   <section id="contact" class="contact-background container-fluid">
-    
+
     <div class="container text-center wow animate__animated animate__flipInY" data-wow-delay="500ms">
       <h3 class="title text-light"><strong>How to contact ?</strong></h3>
     </div>
-    
+
     <div class="row mb-3">
       <div class="col-sm-12 map-responsive">
         <iframe
@@ -408,7 +418,7 @@
           width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
-    
+
     <div class="container mb-3 wow animate__animated animate__rubberBand" data-wow-delay="1s">
       <div class="row">
         <div class="col-sm-12">
@@ -464,7 +474,8 @@
               </a>
             </li>
             <li class="list-inline-item wow animate__animated animate__zoomIn" data-wow-delay="3600ms">
-              <a class="btn-floating btn-li mx-1" href="https://www.youtube.com/channel/UC24xiw1117NS3GLCaADghJw" target="__blank">
+              <a class="btn-floating btn-li mx-1" href="https://www.youtube.com/channel/UC24xiw1117NS3GLCaADghJw"
+                target="__blank">
                 <i class="fab fa-youtube"> </i>
               </a>
             </li>
@@ -532,7 +543,7 @@
     });
   </script>
 
-<!-- owl js -->
+  <!-- owl js -->
   <script>
     $(".owl-carousel").owlCarousel({
       loop: true,
@@ -580,6 +591,28 @@
     $(document).ready(function () {
       $(".play").click();
     });
+  </script>
+
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "105198628605641");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v12.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
 </body>
 
