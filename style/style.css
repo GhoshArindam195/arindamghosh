@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 75px);
+}
+
+/* body{
+    width: 100%;
+} */
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.hero{
+    background: rgba(0, 0, 0, 0.7) url('../media/images/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+.course-text{
+    animation: fade 2s infinite;
+}
+
+.text2{
+    border-right: 2px solid black;
+    animation: blink 1s infinite;
+}
+.text3{
+    border-right: 2px solid black;
+    animation: blink 1s infinite;
+}
+
+.custom-shape-divider-bottom-1676186534 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676186534 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1676186534 .shape-fill {
+    fill: white;
+}
+
+.custom-shape-divider-bottom-1676210180 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676210180 svg {
+    position: relative;
+    display: block;
+    width: calc(114% + 1.3px);
+    height: 151px;
+}
+
+.custom-shape-divider-bottom-1676210180 .shape-fill {
+    fill: black;
+}
+
+.pricing-1{
+    transition: 1s;
+}
+.pricing-2{
+    transition: 1s;
+}
+.pricing-3{
+    transition: 1s;
+}
+.pricing-4{
+    transition: 1s;
+}
+.pricing-1:hover{
+    transform: scale(1.2);
+}
+.pricing-2:hover{
+    transform: scale(1.2);
+}
+.pricing-3:hover{
+    transform: scale(1.2);
+}
+.pricing-4:hover{
+    transform: scale(1.2);
+}
+
+
+
+.content{
+    position: relative;
+    width: 12em;
+    height: 12em;
+    transform-style: preserve-3d;
+    animation: animate 80s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+
+    }
+    100%{
+        transform: perspective(1000px) rotateY(-370deg);
+    }
+}
+
+wrapper{
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+    align-items: center;
+}
+
+.content span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(370px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+
+
+.content span img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.content span img:hover{
+    transform: translateY(-2vh) scale(1.2);
+}
+
+.custom-shape-divider-bottom-1676215989 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676215989 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1676215989 .shape-fill {
+    fill: #000000B3;
+}
+
+
+.custom-shape-divider-bottom-1676281497 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676281497 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1676281497 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media (max-width: 670px){
+    .carousel .carousel-item img{
+        height: 20em !important;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-right: none;
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 430px) {
+    .nav-button{
+        display: none !important;
+    }
+}
+
+@media (max-width: 869px) {
+    .nav-button{
+        display: none !important;
+    }
+}
