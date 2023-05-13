@@ -22,6 +22,37 @@
 </head>
 
 <body class="font-[Poppins]">
+    
+    <!--   FB -->
+  <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "105198628605641");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+<!--   FB ENDS -->
+    
     <header class="bg-white" style="box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);">
         <nav class="flex justify-between items-center w-[92%]  mx-auto p-5">
             <div class="flex items-center">
@@ -172,7 +203,7 @@
                                         . We are the best in our field and have multiple courses on programming. Our
                                         courses
                                         have
-                                        helped over <strong>9000 students</strong> to get a package of <strong>9.8
+                                        helped over <strong>500 students</strong> to get a package of <strong>9.5
                                             LPA</strong> and working professionals a <strong>salary
                                             hike of 30%</strong>.
                                         Out courses are inexpensive yet they provide in-depth knowledge, practice
@@ -295,25 +326,49 @@
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="media/images/placementiseasy.png"
+                        <img src="media/images/courses/Placement is easy.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."
                             style="object-fit: contain; height: 100%;">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="media/images/dsawarriors.png"
+                        <img src="media/images/courses/C Code Crafter.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."
                             style="object-fit: contain; height: 100%;">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="media/images/javaincubators.png"
+                        <img src="media/images/courses/Data Master.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."
                             style="object-fit: contain; height: 100%;">
                     </div>
                     <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="media/images/pythonwebgenerators.png"
+                        <img src="media/images/courses/DSA Worriors.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt
+                            style="object-fit: contain; height: 100%;" </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="media/images/courses/Java Geeks.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt
+                            style="object-fit: contain; height: 100%;" </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="media/images/courses/Java Incubators.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt
+                            style="object-fit: contain; height: 100%;" </div>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="media/images/courses/Python Geeks.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt
+                            style="object-fit: contain; height: 100%;" </div>
+                    </div>
+                    <!-- Item 8 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="media/images/courses/Python Web Generators.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt
                             style="object-fit: contain; height: 100%;" </div>
                     </div>
